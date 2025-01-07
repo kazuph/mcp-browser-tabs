@@ -2,8 +2,6 @@
 
 Model Context Protocol server for retrieving Chrome browser tabs information. This allows Claude Desktop (or any MCP client) to fetch information about currently open Chrome tabs.
 
-<a href="https://glama.ai/mcp/servers/browser-tabs"><img width="380" height="200" src="https://glama.ai/mcp/servers/browser-tabs/badge" alt="@kazuph/mcp-browser-tabs MCP server" /></a>
-
 ## Quick Start (For Users)
 
 To use this tool with Claude Desktop, simply add the following to your Claude Desktop configuration (`~/Library/Application Support/Claude/claude_desktop_config.json`):
