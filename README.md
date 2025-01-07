@@ -1,6 +1,6 @@
 # MCP Browser Tabs
 
-Model Context Protocol server for retrieving Chrome browser tabs information. This allows Claude Desktop (or any MCP client) to fetch information about currently open Chrome tabs.
+Model Context Protocol server for retrieving and managing Chrome browser tabs information. This allows Claude Desktop (or any MCP client) to fetch information about and control currently open Chrome tabs.
 
 ## Quick Start (For Users)
 
@@ -53,7 +53,13 @@ npm run build
 
 ## Available Tools
 
-- `get_tabs`: Retrieves all open tabs from Google Chrome browser, returning their titles and URLs.
+- `get_tabs`: Retrieves all open tabs from Google Chrome browser, returning their titles and URLs. Tabs are grouped by window and displayed in a format like "Window 1-1" (Window 1, Tab 1).
+
+- `close_tab`: Closes a specific tab in Google Chrome using window and tab indices.
+  - Parameters:
+    - windowIndex: Window number (starts from 1)
+    - tabIndex: Tab number within the window (starts from 1)
+  - Note: When closing multiple tabs, start from the highest index numbers to avoid index shifting. After closing tabs, use get_tabs to confirm the changes.
 
 ## Notes
 
