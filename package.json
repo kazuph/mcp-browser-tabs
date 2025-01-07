@@ -1,0 +1,43 @@
+{
+  "name": "@kazuph/mcp-browser-tabs",
+  "version": "1.0.1",
+  "description": "MCP server for retrieving Chrome browser tabs information",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "type": "module",
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc && chmod +x dist/index.js",
+    "start": "node dist/index.js",
+    "prepublishOnly": "npm run build"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kazuph/mcp-browser-tabs.git"
+  },
+  "keywords": [
+    "mcp",
+    "browser",
+    "chrome",
+    "tabs"
+  ],
+  "author": "kazuph",
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.1.0",
+    "zod": "^3.24.1",
+    "zod-to-json-schema": "^3.24.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.5",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.7.2"
+  }
+}
