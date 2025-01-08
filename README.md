@@ -1,4 +1,5 @@
 # MCP Browser Tabs
+[![smithery badge](https://smithery.ai/badge/@kazuph/mcp-browser-tabs)](https://smithery.ai/protocol/@kazuph/mcp-browser-tabs)
 
 Model Context Protocol server for retrieving and managing Chrome browser tabs information. This allows Claude Desktop (or any MCP client) to fetch information about and control currently open Chrome tabs.
 
@@ -18,6 +19,14 @@ To use this tool with Claude Desktop, simply add the following to your Claude De
 ```
 
 This will automatically download and run the latest version of the tool when needed.
+
+### Installing via Smithery
+
+To install Browser Tabs for Claude Desktop automatically via [Smithery](https://smithery.ai/protocol/@kazuph/mcp-browser-tabs):
+
+```bash
+npm exec --package @smithery/cli smithery install @kazuph/mcp-browser-tabs --client claude
+```
 
 ### Required Setup
 
