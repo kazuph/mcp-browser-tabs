@@ -1,12 +1,12 @@
 {
   "name": "@kazuph/mcp-browser-tabs",
-  "version": "1.2.1",
+  "version": "1.2.2",
   "description": "MCP server for retrieving Chrome browser tabs information",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "type": "module",
   "bin": {
-    "mcp-browser-tabs": "dist/index.js"
+    "@kazuph/mcp-browser-tabs": "dist/index.js"
   },
   "files": [
     "dist",
