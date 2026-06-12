@@ -10,6 +10,10 @@ import { z } from "zod";
 import { zodToJsonSchema } from "zod-to-json-schema";
 import { exec } from "node:child_process";
 import { promisify } from "node:util";
+import { createRequire } from "node:module";
+
+// Keep serverInfo in sync with the published npm version (dist/ -> ../package.json)
+const PKG_VERSION: string = createRequire(import.meta.url)("../package.json").version;
 
 const execAsync = promisify(exec);
 
@@ -214,7 +218,7 @@ const CallToolSchema = z.object({
 const server = new Server(
   {
     name: "mcp-browser-tabs",
-    version: "2.0.0",
+    version: PKG_VERSION,
   },
   {
     capabilities: {
