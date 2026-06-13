@@ -1,3 +1,5 @@
+[![MseeP.ai Security Assessment Badge](https://mseep.net/pr/kazuph-mcp-browser-tabs-badge.png)](https://mseep.ai/app/kazuph-mcp-browser-tabs)
+
 # MCP Browser Tabs
 
 Model Context Protocol server for retrieving and managing Chrome browser tabs information. This allows Claude Desktop (or any MCP client) to fetch information about and control currently open Chrome tabs.
